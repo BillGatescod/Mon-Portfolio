@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOBOU NGOUNOU WUILLIAM GATES | Développeur & Graphic Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Orbes animées de fond -->
+<div class="bg-orbs">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+</div>
+
+<!-- Curseur personnalisé -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">
+      <span class="logo-lt">&lt;</span><span class="logo-name">Gates Design</span><span class="logo-lt">/&gt;</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link">Accueil</a>
+      <a href="#about" class="nav-link">À propos</a>
+      <a href="#skills" class="nav-link">Compétences</a>
+      <a href="#projects" class="nav-link">Projets</a>
+      <a href="#timeline" class="nav-link">Parcours</a>
+      <a href="#contact"  class="nav-link">Contact</a>
+    </nav>
+    <a href="#contact" class="btn-primary nav-cta" id="navCta">Me contacter</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible pour un stage ou opportunité
+      </div>
+      <h1 class="hero-title">
+        <span class="line-muted">Bonjour, je suis</span>
+        <span class="line-name" id="heroName">NOBOU NGOUNOU WUILLIAM GATES</span>
+        <span class="line-role">
+          <span class="role-word active">Développeur mobile</span>
+          <span class="role-word">Développeur Web</span>
+          <span class="role-word">Graphiste Designer</span>
+        </span>
+      </h1>
+       <p class="hero-desc">Etudiant en 2eme année à l'IAI Cameroun, spécialité Génie Logiciel je m'interesse particulierement 
+                                au developpement mobile et web ainsi qu'au design graphique. J'aime transformer une idée en produit fonctionnel : de la conception de l'architecture de l'interface 
+                                    utilisateur, en passent par la base de données et le deploiement.
+                                </p>
+        <p class="hero-desc">je cherche actuellement des opportunités pour mettre en pratique 
+            mes compétences sur des projets concrets.
+                                </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">Voir mes projets</a>
+        <a href="#contact"  class="btn-ghost">Me contacter →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Projets réalisés</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Ans de formation</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte flottante profil -->
+    <div class="hero-card">
+      <div class="hero-card-inner">
+        <div class="profile-img-wrap">
+          <img src="assets/profil.png" id="heroPhoto" alt="Photo profil">
+          <div class="profile-ring"></div>
+        </div>
+        <div class="hero-card-info">
+          <p class="card-name">NOBOU NGOUNOU WUILLIAM GATES</p>
+          <p class="card-role">Génie Logiciel · IAI Cameroun</p>
+          <div class="card-tags">
+            <span class="ctag">JQUERY</span>
+            <span class="ctag">PHP</span>
+            <span class="ctag">Android XML</span>
+          </div>
+        </div>
+        <!-- Mini terminal animé -->
+        <div class="mini-terminal">
+          <div class="mt-bar">
+            <span class="dot dr"></span>
+            <span class="dot dy"></span>
+            <span class="dot dg"></span>
+          </div>
+          <div class="mt-body">
+            <p><span class="p">$</span> git status</p>
+            <p class="mt-green">✔ Prêt pour de nouveaux défis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Scroll d'indication -->
+  <div class="scroll-indicator">
+    <div class="scroll-wheel"></div>
+    <span>Scroll</span>
+  </div>
+  
+</section>
+
+<!-- ============ A PROPOS ============ -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-img-col">
+      <div class="about-img-frame reveal">
+        <img src="assets/projects/1.jpg" id="aboutPhoto" alt="À propos">
+      </div>
+    </div>
+    <div class="about-text-col reveal">
+      <h2 class="section-title">Qui suis-je ?</h2>
+      <p>
+        Passionné de développement et de graphisme depuis plus longtemps que mes débuts en informatique, je suis actuellement
+        en deuxième année de cycle ingénieur en Génie Logiciel à l'IAI Cameroun.
+      </p>
+      <p>
+        En dehors du code, je suis passionné de musique, de gaming, fan d'animés, lecteur de
+        documentaire et cinéma ce qui nourrit
+        directement mes projets les plus personnels.
+      </p>
+      <div class="tech-list">
+        <p class="tech-list-label">Technologies récentes :</p>
+        <div class="tech-cols">
+          <ul>
+            <li><span>▸</span> Kotlin &amp; Android XML</li>
+            <li><span>▸</span> HTML / CSS / JS</li>
+            <li><span>▸</span> PHP &amp; MySQL</li>
+            <li><span>▸</span> Photoshop &amp; Illustrator</li>
+          </ul>
+          <ul>
+            <li><span>▸</span> JavaScript</li>
+            <li><span>▸</span> Git / GitHub / GitLab</li>
+            <li><span>▸</span> MERISE / UML</li>
+            <li><span>▸</span> Powerpoint &amp; Word</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-badge-wrap">
+        <div class="about-badge">
+          <span class="ab-icon"><img src="assets/projects/1000281733-removebg-preview.png" alt="localisation" width="50" height="50"></span>
+          <div>
+            <p class="ab-title">IAI Cameroun</p>
+            <p class="ab-sub">Génie Logiciel</p>
+          </div>
+        </div>
+        <div class="about-badge">
+          <span class="ab-icon"><img src="assets/projects/1000281726-removebg-preview.png" alt="localisation" width="50" height="50"></span>
+          <div>
+            <p class="ab-title">Bafoussam</p>
+            <p class="ab-sub">Cameroun</p>
+          </div>
+        </div>
+      </div>
+      <a href="assets/CV.pdf" class="btn-primary" download="CV_NOBOU_WUILLIAM.pdf">Télécharger mon CV ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPÉTENCES ============ -->
+<section class="skills" id="skills">
+  <h2 class="section-title centered reveal">Mes compétences</h2>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-icon"><img src="assets/projects/fb7d30b9de27bfcb6deeb1d9c433a33d.jpg" alt="mobile"></div>
+      <h3>Mobile Android</h3>
+      <ul>
+        <li>Kotlin</li>
+        <li>Android XML · ConstraintLayout</li>
+        <li>Architecture MVVM</li>
+      </ul>
+      <div class="skill-glow"></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon"><img src="assets/projects/3b28b3f7b9a9f5597652239458c642c8.jpg" alt="con"></div>
+      <h3>Web Full-Stack</h3>
+      <ul>
+        <li>HTML · CSS · JavaScript</li>
+        <li>PHP (back-end)</li>
+        <li>MySQL</li>
+      </ul>
+      <div class="skill-glow"></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon"><img src="c:\Users\NOBOU WUILLIAM\Pictures\icône UML\20a0983b213b8fedc95e7476180dcb18.jpg" alt="viviane"></div>
+      <h3>Outils & Méthodes</h3>
+      <ul>
+        <li>Git · GitHub · GitLab</li>
+        <li>Android Studio</li>
+        <li>WAMP</li>
+        <li>MERISE · UML</li>
+      </ul>
+      <div class="skill-glow"></div>
+    </div>
+    <div class="skill-card reveal">
+      
+      <div class="skill-icon"><img src="c:\Users\NOBOU WUILLIAM\Pictures\IMG WhatSapp\WhatsApp Image 2026-02-15 at 03.21.07.jpeg" alt="beltrane"></div>
+      <h3>Langues</h3>
+      <ul>
+        <li>Français — natif</li>
+        <li>Anglais — technique</li>
+      </ul>
+      <div class="skill-glow"></div>
+    </div>
+     <div class="skill-card reveal">
+      <div class="skill-icon"><img src="assets/projects/gra.jpg" alt="sofi"></div>
+      <h3>Infographie</h3>
+      <ul>
+        <li>Photoshop</li>
+        <li>Illustrator</li>
+      </ul>
+      <div class="skill-glow"></div>
+    </div>
+    <div class="skill-card reveal">
+     <div class="skill-icon"><img src="assets/projects/bf0eb8113936e019b4750158b3d16b2d.jpg" alt="mobile"></div>
+      <h3>Suite Office</h3>
+      <ul>
+        <li>Word</li>
+        <li>Powerpoint</li>
+      </ul>
+      <div class="skill-glow"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJETS ============ -->
+<section class="projects" id="projects">
+  <h2 class="section-title reveal">Mes réalisations</h2>
+  <p class="section-sub reveal">Des projets concrets, du code propre, des interfaces soignées.</p>
+
+  <div class="projects-grid">
+
+    <!-- PROJET 1 — MELODY -->
+    <article class="project-card featured reveal">
+      <div class="project-img-wrap">
+        <img src="assets/projects/r.png" alt="Melody App" class="project-img">
+        <div class="project-overlay">
+          <a href="https://github.com/BillGatescod/Melody" target="_blank" class="overlay-btn">Voir le code →</a>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-badge">Projet mobile</div>
+        <h3 class="project-title">Melody</h3>
+        <p class="project-desc">
+          Application Android de lecture de musique développée en Kotlin.
+          Interface sombre avec thème navy/violet, navigation 5 onglets,
+          écrans Accueil, Recherche, Lecture, Bibliothèque, Playlists,
+          Égaliseur et écran de verrouillage personnalisé.
+        </p>
+        <div class="project-tags">
+          <span class="ptag">Kotlin</span>
+          <span class="ptag">Android XML</span>
+          <span class="ptag">UI/UX</span>
+          <span class="ptag">Git</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJET 2 - ADHERA -->
+    <article class="project-card reveal">
+      <div class="project-img-wrap">
+        <img src="assets/projects/tab mem.png" alt="Adhèra" class="project-img">
+        <div class="project-overlay">
+        </div>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">Adhèra</h3>
+        <p class="project-desc">
+          Application de gestion des adhésions pour parti politique, 
+         développée en PHP, HTML, CSS, JAVASCRIPT avec une base de données MySQL. Cas du RDPC
+        </p>
+        <div class="project-tags">
+          <span class="ptag">HTML</span>
+          <span class="ptag">CSS</span>
+          <span class="ptag">JS</span>
+          <span class="ptag">PHP</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJET 3 - GESTION LMD-->
+    <article class="project-card reveal">
+      <div class="project-img-wrap">
+        <img src="assets/projects/lm.png" alt="Gestion LMD" class="project-img">
+        <div class="project-overlay">
+          <!-- <a href="#" target="_blank" class="overlay-btn">Voir le code →</a> -->
+        </div>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">Gestion LMD</h3>
+        <p class="project-desc">
+          Plateforme web de gestion des structures académiques LMD (Licence-Master-Doctorat).
+          5 rôles utilisateurs, 14 modules (formations, semestres, UE, EC, enseignants...).
+        </p>
+        <div class="project-tags">
+          <span class="ptag">PHP</span>
+          <span class="ptag">MySQL</span>
+          <span class="ptag">JavaScript</span>
+        </div>
+        <div class="project-links">
+        </div>
+      </div>
+    </article>
+
+     <!-- PROJET 4 — GRAPHISME -->
+<article class="project-card reveal">
+  <div class="project-img-wrap">
+    <img src="assets/projects/APRIL.png" alt="Design Graphique 1" class="project-img">
+    <div class="project-overlay">
+      <a href="assets/projects/APRIL.png" target="_blank" class="overlay-btn">Voir en grand →</a>
+    </div>
+  </div>
+  <div class="project-info">
+    <h3 class="project-title"> Affiche Évènement</h3>
+    <p class="project-desc">
+      Conception d'une affiche promotionnelle réalisée sous Adobe Photoshop.
+      Travail sur la typographie, la mise en page et la retouche photo.
+    </p>
+    <div class="project-tags">
+      <span class="ptag">Photoshop</span>
+      <span class="ptag">Typographie</span>
+      <span class="ptag">Retouche photo</span>
+    </div>
+  </div>
+</article>
+
+<!-- PROJET 5 — ILLUSTRATOR -->
+<article class="project-card reveal">
+  <div class="project-img-wrap">
+    <img src="assets/projects/LOG.png" alt="Design Graphique 2" class="project-img">
+    <div class="project-overlay">
+      <a href="assets/projects/LOG.png" target="_blank" class="overlay-btn">Voir en grand →</a>
+    </div>
+  </div>
+  <div class="project-info">
+    <h3 class="project-title"> Logo / Identité Visuelle</h3>
+    <p class="project-desc">
+      Création d'un logo vectoriel et d'une identité visuelle complète
+      réalisée sous Adobe Illustrator. Travail sur les formes, couleurs et charte graphique.
+    </p>
+    <div class="project-tags">
+      <span class="ptag">Illustrator</span>
+      <span class="ptag">Logo</span>
+      <span class="ptag">Vectoriel</span>
+      <span class="ptag">Identité visuelle</span>
+    </div>
+  </div>
+</article>
+
+<!-- PROJET 6 — GALERIE DESIGN (plusieurs visuels côte à côte) -->
+<article class="project-card featured reveal">
+  <div class="project-img-wrap design-gallery">
+    <img src="assets/projects/entreprise.png" alt="Design 3" class="gallery-img" data-src="assets/projects/design3.jpg">
+    <img src="assets/projects/phot.png" alt="Design 4" class="gallery-img" data-src="assets/projects/design4.jpg">
+    <img src="assets/projects/Nouvel Anne4.png" alt="Design 5" class="gallery-img" data-src="assets/projects/design5.jpg">
+    <img src="assets/projects/logo3.png" alt="Design 6" class="gallery-img" data-src="assets/projects/design6.jpg">
+    <div class="project-overlay">
+      <a href="https://www.behance.net/williamnobou" class="overlay-btn">Voir toute la galerie →</a>
+    </div>
+  </div>
+  <div class="project-info">
+    <div class="project-badge">Design graphique</div>
+    <h3 class="project-title"> Galerie Créations</h3>
+    <p class="project-desc">
+      Collection de créations graphiques réalisées avec la suite Adobe :
+      flyers, banners, mockups, logos et illustrations vectorielles.
+    </p>
+    <p class="project-desc">
+      ‘’ Là ou l’imagination rencontre la maîtrise, naît l’extraordinaire. 
+      Chaque pixel est une intention, chaque couleur une émotion, 
+      chaque composition une histoire. Nous ne créons pas pas que 
+      simplement des visuels. Nous donnons vie à des des univers. 
+      Bienvenue dans l’art du  design sans limites. ’’
+    </p>
+    <div class="project-tags">
+      <span class="ptag">Photoshop</span>
+      <span class="ptag">Illustrator</span>
+      <span class="ptag">Flyer</span>
+      <span class="ptag">Mockup</span>
+      <span class="ptag">Banner</span>
+    </div>
+    <div class="project-links">
+      <a href="https://www.behance.net/williamnobou" target="_blank" class="plink">Behance ↗</a>
+    </div>
+  </div>
+    
+
+</article>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="projects-categories">
+    <!-- ======= CATÉGORIE DESIGN ======= -->
+    <div class="project-category" data-category="design">
+      <div class="category-header">
+        <span class="category-icon"><img src="assets/projects/Graphic Designer, graphic design business, gadget, logo, media png.jpg" alt="Design 1" class="carousel-imge"></span>
+        <h3 class="category-title">Design Graphique</h3>
+      </div>
+      <div class="carousel-track-wrap">
+        <button class="carousel-arrow left" aria-label="Précédent">&#8592;</button>
+        <div class="carousel-track" id="carousel-design">
+
+          <!-- Carte design 1 -->
+          <div class="carousel-card">
+            <div class="carousel-img-wrap">
+              <img src="assets/projects/HBD2.png" alt="Design 1" class="carousel-img project-img">
+              <div class="carousel-overlay">
+                <a href="assets/projects/HBD2.png" target="_blank" class="overlay-btn">Voir →</a>
+              </div>
+            </div>
+            <div class="carousel-info">
+              <h4>Affiche Évènement pour un aniversaire</h4>
+              <p>Création sous Adobe Photoshop</p>
+              <div class="carousel-tags">
+                <span class="ptag">Photoshop</span>
+                <span class="ptag">Flyer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte design 2 -->
+          <div class="carousel-card">
+            <div class="carousel-img-wrap">
+              <img src="assets/projects/logo(.png" alt="Design 2" class="carousel-img project-img">   
+              <div class="carousel-overlay">
+                <a href="assets/projects/logo(.png" target="_blank" class="overlay-btn">Voir →</a>
+              </div>
+            </div>
+            <div class="carousel-info">
+              <h4>Logo Vectoriel</h4>
+              <p>Identité visuelle sous Illustrator</p>
+              <div class="carousel-tags">
+                <span class="ptag">Illustrator</span>
+                <span class="ptag">Logo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte design 3 -->
+          <div class="carousel-card">
+            <div class="carousel-img-wrap">
+              <img src="assets/projects/entreprise.png" alt="Design 3" class="carousel-img project-img">
+              <div class="carousel-overlay">
+                <a href="assets/projects/entreprise.png" target="_blank" class="overlay-btn">Voir →</a>
+              </div>
+            </div>
+            <div class="carousel-info">
+              <h4>flyer</h4>
+              <p> produit Photoshop</p>
+              <div class="carousel-tags">
+                <span class="ptag">Photoshop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte design 4 -->
+          <div class="carousel-card">
+            <div class="carousel-img-wrap">
+              <img src="assets/projects/patis.jpg" alt="Design 4" class="carousel-img project-img">
+              <div class="carousel-overlay">
+                <a href="assets/projects/patis.jpg" target="_blank" class="overlay-btn">Voir →</a>
+              </div>
+            </div>
+            <div class="carousel-info">
+              <h4>Patisérie</h4>
+              <p>Visuels pour réseaux sociaux</p>
+              <div class="carousel-tags">
+                <span class="ptag">Photoshop</span>
+              </div>
+            </div>
+          </div>
+          <!-- Carte design 5 -->
+          <div class="carousel-card">
+            <div class="carousel-img-wrap">
+              <img src="assets/projects/Nouvel Anne4.png" alt="Design 4" class="carousel-img project-img">
+              <div class="carousel-overlay">
+                <a href="assets/projects/Nouvel Anne4.png" target="_blank" class="overlay-btn">Voir →</a>
+              </div>
+            </div>
+            <div class="carousel-info">
+              <h4>nouvel An </h4>
+              <p>Visuels pour réseaux sociaux</p>
+              <div class="carousel-tags">
+                <span class="ptag">Illustrator</span>
+                <span class="ptag">Banner</span>
+              </div>
+            </div>
+          </div>
+          <!-- Carte design 6 -->
+          <div class="carousel-card">
+            <div class="carousel-img-wrap">
+              <img src="assets/projects/MSC1.png" alt="Design 3" class="carousel-img project-img">
+              <div class="carousel-overlay">
+                <a href="assets/projects/MSC1.png" target="_blank" class="overlay-btn">Voir →</a>
+              </div>
+            </div>
+            <div class="carousel-info">
+              <h4>LOGO</h4>
+              <p> produit Illustrator</p>
+              <div class="carousel-tags">
+                <span class="ptag">Illustrator</span>
+              </div>
+            </div>
+          </div>
+          <!-- Carte design 7 -->
+          <div class="carousel-card">
+            <div class="carousel-img-wrap">
+              <img src="assets/projects/essai2.png" alt="Design 3" class="carousel-img project-img">
+              <div class="carousel-overlay">
+                <a href="assets/projects/essai2.png" target="_blank" class="overlay-btn">Voir →</a>
+              </div>
+            </div>
+            <div class="carousel-info">
+              <h4>Week-End</h4>
+              <p> produit Photoshop</p>
+              <div class="carousel-tags">
+                <span class="ptag">Photoshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-arrow right" aria-label="Suivant">&#8594;</button>
+
+    </div>
+      </div>
+  </div>
+</section>
+
+<!-- ============ PARCOURS ============ -->
+<section class="timeline" id="timeline">
+  <h2 class="section-title reveal">Mon parcours</h2>
+  <div class="timeline-list">
+
+    <div class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <span class="tl-date">2024 — présent</span>
+        <h3 class="tl-role">Étudiant en Génie Logiciel</h3>
+        <p class="tl-org">Institut Africain d'Informatique (IAI Cameroun) — Bafoussam</p>
+        <p class="tl-desc">
+          Formation en architecture logicielle, méthodes MERISE/UML, développement
+          Android et web, bases de données et gestion de projets.
+        </p>
+      </div>
+    </div>
+
+    <div class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <span class="tl-date">2023 - 2024</span>
+        <h3 class="tl-role">Baccalauréat D</h3>
+        <p class="tl-org">Lycée Bilingue de Gouache (LYBIGO)</p>
+        <p class="tl-desc"><!-- ma description pour plustard --></p>
+      </div>
+    </div>
+
+     <div class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <span class="tl-date">2022 - 2023</span>
+        <h3 class="tl-role">Probatoire D</h3>
+        <p class="tl-org">Lycée Bilingue de Gouache (LYBIGO)</p>
+        <p class="tl-desc"><!-- ma description pour plustard --></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact-inner reveal">
+    <h2 class="contact-title">Travaillons ensemble</h2>
+    <p class="contact-sub">
+      Que ce soit pour un stage, une collaboration ou simplement échanger,
+      je suis disponible et ouvert à toutes les opportunités.
+    </p>
+    <form class="contact-form" id="contactForm">
+      <div class="contact-row">
+        <label>
+          Nom complet
+          <input type="text" id="contactName" name="name" required placeholder="Votre nom complet">
+        </label>
+        <label>
+          Email
+          <input type="email" id="contactEmail" name="email" required placeholder="Votre email">
+        </label>
+      </div>
+      <label>
+        Sujet
+        <input type="text" id="contactSubject" name="subject" required placeholder="Sujet du message">
+      </label>
+      <label>
+        Message
+        <textarea id="contactMessage" name="message" rows="5" required placeholder="Votre message..."></textarea>
+      </label>
+      <button type="submit" class="btn-primary contact-submit">Envoyer</button>
+      <p class="contact-note">Après avoir envoyé, choisissez un service pour partager votre message.</p>
+    </form>
+    <div class="contact-share" id="contactShare">
+      <p>Envoyer via :</p>
+      <div class="social-buttons">
+        <a href="https://wa.me/237655066729" class="share-btn whatsapp" id="whatsappShare" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://t.me/237655066729" class="share-btn telegram" id="telegramShare" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.linkedin.com/in/william-nobou-5b843241b" class="share-btn linkedin" id="linkedinShare" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="contact-socials">
+      <a href="https://github.com/BillGatescod" target="_blank" class="social-link">
+        <span class="social-icon">GH</span> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/william-nobou-5b843241b" target="_blank" class="social-link">
+        <span class="social-icon">in</span> LinkedIn
+      </a>
+      <a href="https://wa.me/237655066729" target="_blank" class="social-link">
+        <span class="social-icon"><img src="assets/projects/whatsapp.png" alt="icon wa" width="24" height="24"></span> WhatsApp
+      </a>
+       <a href="https://github.com/BillGatescod" target="_blank" class="social-link">
+        <span class="social-icon"><img src="assets/projects/TEL.png" alt="icon githup"></span>Contact : 655 066 729 / 654 753 165
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ boutton retour en haut ============ -->
+
+<button class="back-to-top" id="backToTop" aria-label="retour en haut">&#8679;</button>
+<footer class="footer">
+  <p>
+    Conçu &amp; développé par <span class="footer-name">Gates Design</span>· <span id="year"></span>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
